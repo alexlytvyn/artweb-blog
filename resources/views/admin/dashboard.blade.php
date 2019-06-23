@@ -25,13 +25,15 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6"><a href="" class="list-group-item">
-				<a href="" class="btn btn-block btn-default">Додати категорію</a>
+			<div class="col-md-6">
+				<a href="#" class="btn btn-block btn-default">Додати категорію</a>
+				<a href="#" class="list-group-item">
 				<h4 class="list-group-item-heading">Категорія перша</h4>
 				<p class="list-group-item-text">Кількість статей: </p>
 				</a></div>
-			<div class="col-md-6"><a href="" class="list-group-item">
-				<a href="" class="btn btn-block btn-default">Додати статтю</a>
+			<div class="col-md-6">
+				<a href="#" class="btn btn-block btn-default">Додати статтю</a>
+				<a href="#" class="list-group-item">
 				<h4 class="list-group-item-heading">Стаття перша</h4>
 				<p class="list-group-item-text">Категорія</p>
 				</a></div>
