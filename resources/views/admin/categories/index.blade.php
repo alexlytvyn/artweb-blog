@@ -22,8 +22,13 @@
 				<tr>
 					<td>{{$category->title}}</td>
 					<td>{{$category->is_published}}</td>
-					<td>
-						<a href="{{route('admin.category.edit', $category)}}" class=""><i class="fa fa-edit"></i></a>
+					<td class="text-right">
+						<form onsubmit="if(confirm('Ви справді хочете видалити категорію?')){return true;} else {return false;}" action="{{route('admin.category.destroy', $category)}}" method="post">
+							{{csrf_field()}}
+							{{method_field('DELETE')}}
+							<a href="{{route('admin.category.edit', $category)}}" class="btn btn-default"><i class="fa fa-edit"></i></a>
+							<button type="submit" name="button" class="btn"><i class="fa fa-trash-o"></i></button>
+						</form>
 					</td>
 				</tr>
 			@empty
