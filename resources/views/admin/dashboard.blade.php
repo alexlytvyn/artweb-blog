@@ -26,7 +26,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<a href="#" class="btn btn-block btn-default">Додати категорію</a>
+				<a href="{{route('admin.category.create')}}" class="btn btn-block btn-default">Додати категорію</a>
 				<a href="#" class="list-group-item">
 				<h4 class="list-group-item-heading">Категорія перша</h4>
 				<p class="list-group-item-text">Кількість статей: </p>
