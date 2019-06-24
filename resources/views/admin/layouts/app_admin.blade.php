@@ -49,6 +49,12 @@
 														<li><a href="{{route('admin.article.index')}}">Статті</a></li>
 													</ul>
                         </li>
+                        <li class="dropdown">
+                        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Керування користувачами</a>
+													<ul class="dropdown-menu" role="menu">
+														<li><a href="{{route('admin.user_management.user.index')}}">Користувачі</a></li>
+													</ul>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
