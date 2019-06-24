@@ -44,7 +44,7 @@ class CategoriesController extends Controller
     {
         Category::create($request->all());
 
-				return redirect()->route('admin.category.index');
+				return redirect()->route('admin.category.index')->with('success', 'Категорію було успішно додано!');
     }
 
     /**
@@ -84,7 +84,7 @@ class CategoriesController extends Controller
     {
 			$category->update($request->except('slug'));
 
-			return redirect()->route('admin.category.index');
+			return redirect()->route('admin.category.index')->with('success', 'Категорію було успішно відредаговано!');
     }
 
     /**
@@ -96,7 +96,7 @@ class CategoriesController extends Controller
     public function destroy(Category $category)
     {
         $category->delete();
-				
-				return redirect()->route('admin.category.index');
+
+				return redirect()->route('admin.category.index')->with('success', 'Категорію було успішно видалено!');
     }
 }

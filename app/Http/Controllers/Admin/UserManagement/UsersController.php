@@ -52,7 +52,7 @@ class UsersController extends Controller
 				'password' => bcrypt($request->password)
 			]);
 
-			return redirect()->route('admin.user_management.user.index');
+			return redirect()->route('admin.user_management.user.index')->with('success', 'Користувача було успішно додано!');
     }
 
     /**
@@ -105,7 +105,7 @@ class UsersController extends Controller
 			$request['password'] == null ?: $user->password = bcrypt($request->password);
 			$user-save();
 
-			return redirect()->route('admin.user_management.user.index');
+			return redirect()->route('admin.user_management.user.index')->with('success', 'Дані про користувача було успішно відредаговано!');
     }
 
     /**
@@ -118,6 +118,6 @@ class UsersController extends Controller
     {
         $user->delete();
 
-				return redirect()->route('admin.user_management.user.index');
+				return redirect()->route('admin.user_management.user.index')->with('success', 'Дані про користувача було успішно видалено!');
     }
 }

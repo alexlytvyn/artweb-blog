@@ -50,7 +50,7 @@ class ArticlesController extends Controller
 					$article->categories()->attach($request->input('categories'));
 				}
 
-				return redirect()->route('admin.article.index');
+				return redirect()->route('admin.article.index')->with('success', 'Статтю було успішно додано!');
     }
 
     /**
@@ -96,7 +96,7 @@ class ArticlesController extends Controller
 					$article->categories()->attach($request->input('categories'));
 				}
 
-				return redirect()->route('admin.article.index');
+				return redirect()->route('admin.article.index')->with('success', 'Статтю було успішно відредаговано!');
 			}
 
     /**
@@ -108,9 +108,9 @@ class ArticlesController extends Controller
     public function destroy(Article $article)
     {
 				$article->categories()->detach();
-				
+
         $article->delete();
 
-				return redirect()->route('admin.article.index');
+				return redirect()->route('admin.article.index')->with('success', 'Статтю було успішно видалено!');
     }
 }

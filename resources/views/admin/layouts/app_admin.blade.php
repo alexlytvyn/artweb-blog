@@ -89,7 +89,7 @@
                 </div>
             </div>
         </nav>
-
+				<div class="container">@include('admin.inc.messages')</div>
         @yield('content')
     </div>
 
