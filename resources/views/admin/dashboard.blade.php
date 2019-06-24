@@ -3,24 +3,14 @@
 @section('content')
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
-				<div class="jumbotron">
+			<div class="col-md-6">
+				<div class="jumbotron text-center">
 					<p><span class="label label-primary">Категорій: {{$categories_count}}</span></p>
 				</div>
 			</div>
-			<div class="col-md-3">
-				<div class="jumbotron">
+			<div class="col-md-6">
+				<div class="jumbotron text-center">
 					<p><span class="label label-primary">Статей: {{$articles_count}}</span></p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="jumbotron">
-					<p><span class="label label-primary">Відвідувачів: 0</span></p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="jumbotron">
-					<p><span class="label label-primary">Сьогодні: 0</span></p>
 				</div>
 			</div>
 		</div>
